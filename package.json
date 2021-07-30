@@ -23,13 +23,16 @@
   },
   "dependencies": {
     "@nestjs/common": "^7.6.15",
+    "@nestjs/config": "^1.0.1",
     "@nestjs/core": "^7.6.15",
     "@nestjs/platform-express": "^7.6.15",
+    "@nestjs/swagger": "^5.0.9",
     "@nestjs/typeorm": "^8.0.1",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.6",
+    "rxjs": "^7",
+    "swagger": "^0.7.5",
     "typeorm": "^0.2.35"
   },
   "devDependencies": {
@@ -66,7 +69,7 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "collectCoverageFrom": [
-      "**/*.(t|j)s"
+      "**/*.(service|controller).(t|j)s"
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
